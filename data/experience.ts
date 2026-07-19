@@ -28,7 +28,7 @@ export const experiences = [
     ],
 
     description: [
-      "Founded Raghava Innovations with a vision to build intelligent engineering solutions.",
+      "Raghava Innovations is an independent engineering and research initiative founded by Om Kulkarni to design and develop intelligent solutions in Artificial Intelligence, Robotics, Electric Vehicles, Embedded Systems, Industrial Automation, and Computer Vision.",
       "Leading research and development in Artificial Intelligence, Robotics, Electric Vehicles, Embedded Systems and Industrial Automation.",
       "Managing innovative engineering projects including Rydezo, SkillSense AI, AI-powered Drone Systems and SmartTorqueDrive.",
       "Driving product development, research initiatives and engineering innovation.",
