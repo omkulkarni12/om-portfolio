@@ -89,7 +89,7 @@ export const experiences = [
 
     company: "Sina Technology Pvt. Ltd.",
 
-    logo: "/logos/sina.jpg",
+    logo: "/logos/sina-logo.jpg",
 
     role: "Electrical Engineering Intern / Industrial Trainee",
 

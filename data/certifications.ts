@@ -32,7 +32,7 @@ export const certifications: Certification[] = [
   {
     id: 6,
     organization: "Sina Technology",
-    logo: "/logos/sina.jpg",
+    logo: "/logos/sina-logo.jpg",
     website: "https://sinatechnology.com",
     featured: true,
   },
