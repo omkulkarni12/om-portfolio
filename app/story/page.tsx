@@ -103,14 +103,14 @@ export default function StoryPage() {
           <div className="absolute bottom-1/4 left-1/3 w-[300px] h-[300px] bg-indigo-500/5 blur-[110px] pointer-events-none rounded-full" />
 
           {/* Cinematic Avatar Cluster Container */}
-          <div className="relative w-full max-w-4xl h-[560px] md:h-[460px] flex items-center justify-center mb-6 mt-4">
+          <div className="relative w-full max-w-4xl min-h-[450px] md:h-[480px] flex flex-col md:block items-center justify-center mb-6 mt-4">
             
             {/* Dashed Connecting Track / Orbit Lines for Desktop */}
             <div className="absolute inset-20 border border-white/5 rounded-full pointer-events-none hidden md:block" />
             <div className="absolute inset-36 border border-dashed border-blue-500/10 rounded-full pointer-events-none hidden md:block animate-spin-slow" />
 
             {/* Center Main Avatar */}
-            <div className="relative h-32 w-32 md:h-44 md:w-44 rounded-full overflow-hidden border-[6px] border-blue-500/15 bg-slate-900 shadow-2xl z-20 transition-all duration-500 hover:scale-105 hover:border-blue-500/40">
+            <div className="relative md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 h-36 w-36 md:h-44 md:w-44 rounded-full overflow-hidden border-[6px] border-blue-500/15 bg-slate-900 shadow-2xl z-20 transition-all duration-500 hover:scale-105 hover:border-blue-500/40 flex-shrink-0">
               <Image
                 src="/images/awards/management-recognition.jpg"
                 alt="Om Rajendra Kulkarni"
@@ -122,10 +122,10 @@ export default function StoryPage() {
             </div>
 
             {/* Pulsing Ring behind central avatar */}
-            <div className="absolute h-36 w-36 md:h-48 md:w-48 rounded-full border-2 border-blue-500/20 animate-ping z-10 opacity-25" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-38 w-38 md:h-48 md:w-48 rounded-full border-2 border-blue-500/20 animate-ping z-10 opacity-25 hidden md:block" />
 
-            {/* Floating Faded Chapter Avatars (Widely spaced on desktop) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:block gap-4 w-full px-4 md:px-0 z-20 mt-8 md:mt-0">
+            {/* Floating Faded Chapter Avatars (Stacked on mobile/tablet, orbited on desktop) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:block gap-4 w-full px-4 md:px-0 z-20 mt-10 md:mt-0">
               {chapters.map((chapter) => (
                 <div
                   key={chapter.id}
